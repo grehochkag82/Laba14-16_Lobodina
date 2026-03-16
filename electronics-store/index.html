@@ -1,11 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ElectroShop - интернет-магазин электроники</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="ElectroShop" width="150" height="40">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="catalog.html" method="get">
+                        <input type="text" name="search" placeholder="Поиск товаров..." class="search-input">
+                        <button type="submit" class="search-btn">Найти</button>
+                    </form>
+                </div>
+                <div class="user-actions">
+                    <a href="cart.html" class="cart-link">
+                        Корзина
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Добро пожаловать в ElectroShop</h1>
+                    <p>Лучшая электроника по доступным ценам</p>
+                    <a href="catalog.html" class="btn btn-primary">Перейти к покупкам</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Популярные категории</h2>
+                <div class="categories-grid">
+                    <a href="catalog.html?category=phones" class="category-card">
+                        <div class="category-image">
+                            <img src="images/phone-1.jpg" alt="Смартфоны">
+                        </div>
+                        <h3>Смартфоны</h3>
+                        <p>от 15 000 ₽</p>
+                    </a>
+                    
+                    <a href="catalog.html?category=laptops" class="category-card">
+                        <div class="category-image">
+                            <img src="images/laptop-1.jpg" alt="Ноутбуки">
+                        </div>
+                        <h3>Ноутбуки</h3>
+                        <p>от 45 000 ₽</p>
+                    </a>
+                    
+                    <a href="catalog.html?category=tablets" class="category-card">
+                        <div class="category-image">
+                            <img src="images/tablet-1.jpg" alt="Планшеты">
+                        </div>
+                        <h3>Планшеты</h3>
+                        <p>от 25 000 ₽</p>
+                    </a>
+                    
+                    <a href="catalog.html?category=accessories" class="category-card">
+                        <div class="category-image">
+                            <img src="images/accessories-1.jpg" alt="Аксессуары">
+                        </div>
+                        <h3>Аксессуары</h3>
+                        <p>от 500 ₽</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Рекомендуемые товары</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge">Хит продаж</div>
+                        <img src="images/phone-2.jpg" alt="iPhone 14 Pro" class="product-image">
+                        <h3 class="product-title">iPhone 14 Pro</h3>
+                        <p class="product-price">89 990 ₽</p>
+                        <p class="product-specs">6.1", A16 Bionic, 128GB</p>
+                        <a href="product.html?id=1" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge">Новинка</div>
+                        <img src="images/laptop-2.jpg" alt="MacBook Air M2" class="product-image">
+                        <h3 class="product-title">MacBook Air M2</h3>
+                        <p class="product-price">129 990 ₽</p>
+                        <p class="product-specs">13.6", 8GB RAM, 256GB</p>
+                        <a href="product.html?id=2" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                    
+                    <div class="product-card">
+                        <img src="images/tablet-1.jpg" alt="iPad Air" class="product-image">
+                        <h3 class="product-title">iPad Air</h3>
+                        <p class="product-price">54 990 ₽</p>
+                        <p class="product-specs">10.9", M1, 64GB</p>
+                        <a href="product.html?id=3" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge">Скидка 20%</div>
+                        <img src="images/accessories-1.jpg" alt="AirPods Pro" class="product-image">
+                        <p class="old-price">24 990 ₽</p>
+                        <p class="product-price">19 990 ₽</p>
+                        <p class="product-specs">AirPods Pro 2</p>
+                        <a href="product.html?id=4" class="btn btn-secondary">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🚚</div>
+                        <h3>Бесплатная доставка</h3>
+                        <p>При заказе от 10 000 ₽</p>
+                    </div>
+                    
+                    <div class="advantage-item">
+                        <div class="advantage-icon">✓</div>
+                        <h3>Гарантия качества</h3>
+                        <p>Официальная гарантия 1 год</p>
+                    </div>
+                    
+                    <div class="advantage-item">
+                        <div class="advantage-icon">💳</div>
+                        <h3>Удобная оплата</h3>
+                        <p>Наличные, карты, рассрочка</p>
+                    </div>
+                    
+                    <div class="advantage-item">
+                        <div class="advantage-icon">↩️</div>
+                        <h3>Легкий возврат</h3>
+                        <p>14 дней на возврат</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О магазине</h3>
+                    <p>ElectroShop - ваш надежный партнер в мире электроники с 2015 года.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Категории</h3>
+                    <ul>
+                        <li><a href="catalog.html?category=phones">Смартфоны</a></li>
+                        <li><a href="catalog.html?category=laptops">Ноутбуки</a></li>
+                        <li><a href="catalog.html?category=tablets">Планшеты</a></li>
+                        <li><a href="catalog.html?category=accessories">Аксессуары</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>📞 8 (800) 123-45-67</p>
+                    <p>✉️ info@electroshop.ru</p>
+                    <p>📍 г. Волжский ул. Пушкино-Колотушкино, д. 19</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ElectroShop. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
