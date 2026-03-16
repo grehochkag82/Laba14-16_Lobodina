@@ -1,11 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Каталог товаров - ElectroShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="ElectroShop" width="150" height="40">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="catalog.html" method="get">
+                        <input type="text" name="search" placeholder="Поиск товаров..." class="search-input">
+                        <button type="submit" class="search-btn">Найти</button>
+                    </form>
+                </div>
+                <div class="user-actions">
+                    <a href="cart.html" class="cart-link">
+                        Корзина
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html" class="active">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> > <span>Каталог</span>
+            </div>
+        </div>
+
+        <section class="catalog">
+            <div class="container">
+                <h1 class="page-title">Каталог товаров</h1>
+                
+                <div class="catalog-layout">
+                    <aside class="filters">
+                        <h2>Фильтры</h2>
+                        
+                        <div class="filter-section">
+                            <h3>Категория</h3>
+                            <ul class="filter-list">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="phones" checked>
+                                        Смартфоны
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="laptops">
+                                        Ноутбуки
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="tablets">
+                                        Планшеты
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="category" value="accessories">
+                                        Аксессуары
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3>Цена</h3>
+                            <div class="price-range">
+                                <input type="number" placeholder="от" min="0" class="price-input">
+                                <span>-</span>
+                                <input type="number" placeholder="до" min="0" class="price-input">
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section">
+                            <h3>Бренд</h3>
+                            <ul class="filter-list">
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="brand" value="apple">
+                                        Apple
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="brand" value="samsung">
+                                        Samsung
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="brand" value="xiaomi">
+                                        Xiaomi
+                                    </label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <input type="checkbox" name="brand" value="huawei">
+                                        Huawei
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary filter-btn">Применить</button>
+                        <button type="reset" class="btn btn-secondary reset-btn">Сбросить</button>
+                    </aside>
+                    
+                    <div class="catalog-content">
+                        <div class="sort-bar">
+                            <span>Сортировать:</span>
+                            <select class="sort-select">
+                                <option>по популярности</option>
+                                <option>по цене (возрастание)</option>
+                                <option>по цене (убывание)</option>
+                                <option>по названию</option>
+                            </select>
+                        </div>
+                        
+                        <div class="products-grid">
+                            <div class="product-card">
+                                <div class="product-badge">Хит продаж</div>
+                                <img src="images/phone-2.jpg" alt="iPhone 14 Pro" class="product-image">
+                                <h3 class="product-title">iPhone 14 Pro</h3>
+                                <p class="product-price">89 990 ₽</p>
+                                <p class="product-specs">6.1", A16 Bionic, 128GB</p>
+                                <a href="product.html?id=1" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/phone-1.jpg" alt="Samsung Galaxy S23" class="product-image">
+                                <h3 class="product-title">Samsung Galaxy S23</h3>
+                                <p class="product-price">74 990 ₽</p>
+                                <p class="product-specs">6.1", Snapdragon 8 Gen 2, 256GB</p>
+                                <a href="product.html?id=5" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <div class="product-badge">Новинка</div>
+                                <img src="images/laptop-2.jpg" alt="MacBook Air M2" class="product-image">
+                                <h3 class="product-title">MacBook Air M2</h3>
+                                <p class="product-price">129 990 ₽</p>
+                                <p class="product-specs">13.6", 8GB RAM, 256GB</p>
+                                <a href="product.html?id=2" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/laptop-1.jpg" alt="ASUS ROG" class="product-image">
+                                <h3 class="product-title">ASUS ROG Strix</h3>
+                                <p class="product-price">149 990 ₽</p>
+                                <p class="product-specs">15.6", RTX 3060, 16GB RAM</p>
+                                <a href="product.html?id=6" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/tablet-1.jpg" alt="iPad Air" class="product-image">
+                                <h3 class="product-title">iPad Air</h3>
+                                <p class="product-price">54 990 ₽</p>
+                                <p class="product-specs">10.9", M1, 64GB</p>
+                                <a href="product.html?id=3" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/tablet-1.jpg" alt="Samsung Tab S9" class="product-image">
+                                <h3 class="product-title">Samsung Tab S9</h3>
+                                <p class="product-price">69 990 ₽</p>
+                                <p class="product-specs">11", Snapdragon 8 Gen 2, 128GB</p>
+                                <a href="product.html?id=7" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <div class="product-badge">Скидка 20%</div>
+                                <img src="images/accessories-1.jpg" alt="AirPods Pro" class="product-image">
+                                <p class="old-price">24 990 ₽</p>
+                                <p class="product-price">19 990 ₽</p>
+                                <p class="product-specs">AirPods Pro 2</p>
+                                <a href="product.html?id=4" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                            
+                            <div class="product-card">
+                                <img src="images/accessories-1.jpg" alt="Galaxy Buds2" class="product-image">
+                                <h3 class="product-title">Galaxy Buds2 Pro</h3>
+                                <p class="product-price">14 990 ₽</p>
+                                <p class="product-specs">Samsung Galaxy Buds2 Pro</p>
+                                <a href="product.html?id=8" class="btn btn-secondary">Подробнее</a>
+                            </div>
+                        </div>
+                        
+                        <div class="pagination">
+                            <a href="#" class="page-link active">1</a>
+                            <a href="#" class="page-link">2</a>
+                            <a href="#" class="page-link">3</a>
+                            <a href="#" class="page-link">4</a>
+                            <a href="#" class="page-link">5</a>
+                            <a href="#" class="page-link">→</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О магазине</h3>
+                    <p>ElectroShop - ваш надежный партнер в мире электроники с 2015 года.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Категории</h3>
+                    <ul>
+                        <li><a href="catalog.html?category=phones">Смартфоны</a></li>
+                        <li><a href="catalog.html?category=laptops">Ноутбуки</a></li>
+                        <li><a href="catalog.html?category=tablets">Планшеты</a></li>
+                        <li><a href="catalog.html?category=accessories">Аксессуары</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>📞 8 (800) 123-45-67</p>
+                    <p>✉️ info@electroshop.ru</p>
+                    <p>📍 г. Москва, ул. Электронная, д. 1</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ElectroShop. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
