@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>iPhone 14 Pro - ElectroShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="ElectroShop" width="150" height="40">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="catalog.html" method="get">
+                        <input type="text" name="search" placeholder="Поиск товаров..." class="search-input">
+                        <button type="submit" class="search-btn">Найти</button>
+                    </form>
+                </div>
+                <div class="user-actions">
+                    <a href="cart.html" class="cart-link">
+                        Корзина
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> > 
+                <a href="catalog.html">Каталог</a> > 
+                <a href="catalog.html?category=phones">Смартфоны</a> > 
+                <span>iPhone 14 Pro</span>
+            </div>
+        </div>
+
+        <section class="product-page">
+            <div class="container">
+                <div class="product-details">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img src="images/phone-2.jpg" alt="iPhone 14 Pro">
+                        </div>
+                        <div class="thumbnail-list">
+                            <img src="images/phone-2.jpg" alt="iPhone 14 Pro" class="thumbnail active">
+                            <img src="images/phone-2.jpg" alt="iPhone 14 Pro вид 2" class="thumbnail">
+                            <img src="images/phone-2.jpg" alt="iPhone 14 Pro вид 3" class="thumbnail">
+                            <img src="images/phone-2.jpg" alt="iPhone 14 Pro вид 4" class="thumbnail">
+                        </div>
+                    </div>
+                    
+                    <div class="product-info">
+                        <h1 class="product-name">iPhone 14 Pro</h1>
+                        
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">15 отзывов</span>
+                        </div>
+                        
+                        <div class="product-availability">
+                            <span class="in-stock">В наличии</span>
+                        </div>
+                        
+                        <div class="product-price-block">
+                            <div class="current-price">89 990 ₽</div>
+                            <div class="old-price">99 990 ₽</div>
+                            <div class="price-discount">Скидка 10%</div>
+                        </div>
+                        
+                        <div class="product-options">
+                            <h3>Цвет:</h3>
+                            <div class="color-options">
+                                <span class="color-option purple active"></span>
+                                <span class="color-option gold"></span>
+                                <span class="color-option silver"></span>
+                                <span class="color-option black"></span>
+                            </div>
+                            
+                            <h3>Память:</h3>
+                            <div class="memory-options">
+                                <span class="memory-option active">128GB</span>
+                                <span class="memory-option">256GB</span>
+                                <span class="memory-option">512GB</span>
+                                <span class="memory-option">1TB</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn">-</button>
+                                <input type="number" value="1" min="1" max="10" class="quantity-input">
+                                <button class="quantity-btn">+</button>
+                            </div>
+                            
+                            <a href="cart.html" class="btn btn-primary add-to-cart-btn">Добавить в корзину</a>
+                            <a href="#" class="btn btn-secondary buy-now-btn">Купить сейчас</a>
+                        </div>
+                        
+                        <div class="product-meta">
+                            <p><strong>Артикул:</strong> IP14PRO-128-PUR</p>
+                            <p><strong>Бренд:</strong> Apple</p>
+                            <p><strong>Гарантия:</strong> 12 месяцев</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-tabs">
+                    <div class="tabs-header">
+                        <button class="tab-btn active">Описание</button>
+                        <button class="tab-btn">Характеристики</button>
+                        <button class="tab-btn">Отзывы (15)</button>
+                        <button class="tab-btn">Доставка и оплата</button>
+                    </div>
+                    
+                    <div class="tab-content active">
+                        <h2>Описание товара</h2>
+                        <p>iPhone 14 Pro — это новейший смартфон от Apple с инновационными функциями и передовыми технологиями. Оснащенный мощным процессором A16 Bionic, этот телефон обеспечивает невероятную производительность и эффективность.</p>
+                        <p>Основные особенности:</p>
+                        <ul>
+                            <li>6.1-дюймовый Super Retina XDR дисплей с ProMotion</li>
+                            <li>Система камер Pro: основная 48 МП, сверхширокоугольная и телефото</li>
+                            <li>Режим "Киноэффект" теперь в 4K Dolby Vision с частотой 24 кадра/с</li>
+                            <li>Функция "Динамический остров" для уведомлений и активности</li>
+                            <li>Спутниковая связь для экстренных случаев</li>
+                            <li>Защита от воды и пыли по стандарту IP68</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <section class="related-products">
+                    <h2 class="section-title">Похожие товары</h2>
+                    <div class="products-grid">
+                        <div class="product-card">
+                            <img src="images/phone-1.jpg" alt="iPhone 14" class="product-image">
+                            <h3 class="product-title">iPhone 14</h3>
+                            <p class="product-price">74 990 ₽</p>
+                            <a href="product.html?id=9" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="images/phone-2.jpg" alt="iPhone 14 Pro Max" class="product-image">
+                            <h3 class="product-title">iPhone 14 Pro Max</h3>
+                            <p class="product-price">99 990 ₽</p>
+                            <a href="product.html?id=10" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="images/phone-1.jpg" alt="iPhone 13 Pro" class="product-image">
+                            <h3 class="product-title">iPhone 13 Pro</h3>
+                            <p class="product-price">69 990 ₽</p>
+                            <a href="product.html?id=11" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                        
+                        <div class="product-card">
+                            <img src="images/phone-2.jpg" alt="iPhone SE" class="product-image">
+                            <h3 class="product-title">iPhone SE</h3>
+                            <p class="product-price">44 990 ₽</p>
+                            <a href="product.html?id=12" class="btn btn-secondary">Подробнее</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+    </footer>
 </body>
 </html>
