@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>О нас - ElectroShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="ElectroShop" width="150" height="40">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="catalog.html" method="get">
+                        <input type="text" name="search" placeholder="Поиск товаров..." class="search-input">
+                        <button type="submit" class="search-btn">Найти</button>
+                    </form>
+                </div>
+                <div class="user-actions">
+                    <a href="cart.html" class="cart-link">
+                        Корзина
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html" class="active">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> > <span>О нас</span>
+            </div>
+        </div>
+
+        <section class="about-page">
+            <div class="container">
+                <h1 class="page-title">О компании ElectroShop</h1>
+                
+                <div class="about-section">
+                    <div class="about-content">
+                        <h2>Кто мы</h2>
+                        <p>ElectroShop — это современный интернет-магазин электроники, основанный в 2015 году. Мы специализируемся на продаже качественной техники от ведущих мировых производителей. Наша миссия — сделать современные технологии доступными каждому.</p>
+                        
+                        <h2>Наша история</h2>
+                        <p>Всё началось с небольшого отдела в торговом центре, где мы продавали аксессуары для телефонов. Благодаря любви к технике и вниманию к потребностям клиентов, мы выросли в одного из лидеров рынка электроники в регионе. Сегодня наш интернет-магазин обслуживает тысячи клиентов по всей России.</p>
+                        
+                        <h2>Наши ценности</h2>
+                        <ul>
+                            <li><strong>Качество:</strong> Мы продаём только оригинальную продукцию от официальных дистрибьюторов</li>
+                            <li><strong>Надёжность:</strong> Предоставляем гарантию на все товары и быстрый сервис</li>
+                            <li><strong>Доступность:</strong> Предлагаем конкурентные цены и гибкую систему скидок</li>
+                            <li><strong>Клиентоориентированность:</strong> Каждый клиент для нас особенный</li>
+                        </ul>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">лет на рынке</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50 000+</span>
+                                <span class="stat-label">довольных клиентов</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">товаров в наличии</span>
+                            </div>
+                        </div>
+                        
+                        <h2>Почему выбирают нас</h2>
+                        <p>Мы не просто продаём технику — мы помогаем нашим клиентам сделать правильный выбор. Наши консультанты проходят регулярное обучение и всегда готовы помочь с выбором устройства, которое идеально подойдёт именно вам.</p>
+                        <p>Мы гордимся тем, что многие клиенты возвращаются к нам снова и рекомендуют нас друзьям и знакомым.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>О магазине</h3>
+                    <p>ElectroShop - ваш надежный партнер в мире электроники с 2015 года.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Информация</h3>
+                    <ul>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Возврат</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Категории</h3>
+                    <ul>
+                        <li><a href="catalog.html?category=phones">Смартфоны</a></li>
+                        <li><a href="catalog.html?category=laptops">Ноутбуки</a></li>
+                        <li><a href="catalog.html?category=tablets">Планшеты</a></li>
+                        <li><a href="catalog.html?category=accessories">Аксессуары</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>📞 8 (800) 123-45-67</p>
+                    <p>✉️ info@electroshop.ru</p>
+                    <p>📍 г. Волжский ул. Пушкино-Колотушкино, д. 19</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 ElectroShop. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
