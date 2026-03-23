@@ -1,11 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Контакты - ElectroShop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="ElectroShop" width="150" height="40">
+                    </a>
+                </div>
+                <div class="search-bar">
+                    <form action="catalog.html" method="get">
+                        <input type="text" name="search" placeholder="Поиск товаров..." class="search-input">
+                        <button type="submit" class="search-btn">Найти</button>
+                    </form>
+                </div>
+                <div class="user-actions">
+                    <a href="cart.html" class="cart-link">
+                        Корзина
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumbs">
+            <div class="container">
+                <a href="index.html">Главная</a> > <span>Контакты</span>
+            </div>
+        </div>
+
+        <section class="contacts-page">
+            <div class="container">
+                <h1 class="page-title">Контакты</h1>
+                
+                <div class="contacts-grid">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+                        
+                        <div class="contact-item">
+                            <h3>Телефон</h3>
+                            <p>📞 8 (800) 123-45-67 (бесплатно)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-</html>
